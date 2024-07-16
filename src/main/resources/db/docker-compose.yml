@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: roadtodev
+    ports:
+      - "3306:3306"
+# Uncomment the below lines to persist the database data
+#    volumes:
+#      - db-data:/var/lib/mysql
+#volumes:
+#  db-data:
+
+# Navigate into this directory and execute the following command in the terminal to start the database:
+#     docker-compose -f docker-compose.yml up -d
+
+# The following command will stop the database:
+# docker-compose down
