@@ -17,7 +17,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className={"h-full w-full"}>{children}</div>
+        <div
+          className={
+            "h-full w-full bg-gradient-to-br from-[#0F2027] via-[#203A43] to-[#2C5364]"
+          }
+        >
+          {children}
+        </div>
       </body>
     </html>
   );
