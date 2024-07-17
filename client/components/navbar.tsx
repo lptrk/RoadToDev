@@ -49,7 +49,9 @@ ListItem.displayName = "ListItem";
 export default function Navbar() {
   return (
     <div
-      className={"flex justify-between items-center p-4 border-b border-black"}
+      className={
+        "absolute w-full flex justify-between items-center p-4 border-b border-black"
+      }
     >
       <div className={" space-x-4 items-center"}>
         {/*TODO: Create NavigationMenu FOR EACH category*/}
@@ -113,7 +115,9 @@ export default function Navbar() {
             <DropdownMenuLabel>My Account</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuItem>Profile</DropdownMenuItem>
-            <DropdownMenuItem>Settings</DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link href={"/user/settings"}>Settings</Link>
+            </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
